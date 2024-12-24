@@ -1,0 +1,41 @@
+[project]
+name = "python-project-template"
+version = "0.1.0"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["F401", "F841"] # jupyter notebook
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+disable_error_code = ["empty-body"]
+warn_return_any = true
+allow_redefinition = true
+check_untyped_defs = true
+ignore_missing_imports = true
+incremental = true
+strict_optional = true
+show_traceback = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+force_uppercase_builtins = true
+force_union_syntax = true
+
+[tool.pdm.scripts]
+main = "python src/main.py"
