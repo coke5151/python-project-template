@@ -16,7 +16,7 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"*.ipynb" = ["F401", "F841"] # jupyter notebook
+"*.ipynb" = ["F401", "F841", "I001"] # jupyter notebook
 
 [tool.ruff.format]
 quote-style = "double"
