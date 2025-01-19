@@ -18,7 +18,13 @@ For better experience, you can add the following settings to your `settings.json
         "source.organizeImports": true
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
-}
+},
+"python.analysis.inlayHints.variableTypes": true,
+"python.analysis.inlayHints.pytestParameters": true,
+"python.analysis.inlayHints.functionReturnTypes": true,
+"python.analysis.inlayHints.callArgumentNames": "all",
+"python.analysis.autoImportCompletions": true,
+"python.analysis.extraPaths": ["./.venv/Lib/site-packages"]
 ```
 
 ## Scripts
