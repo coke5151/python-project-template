@@ -2,6 +2,10 @@
 name = "python-project-template"
 version = "0.1.0"
 
+[tool.pyright]
+exclude = [".venv", "venv"]
+ignore = []                 # ignore package
+
 [tool.ruff]
 line-length = 120
 
@@ -20,7 +24,7 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"*.ipynb" = ["F401", "F841", "I001"] # jupyter notebook
+"*.ipynb" = ["F401", "F841", "I001"] # Jupyter Notebook
 
 [tool.ruff.format]
 quote-style = "double"
@@ -39,7 +43,7 @@ warn_unused_configs = true
 warn_unreachable = true
 force_uppercase_builtins = true
 force_union_syntax = true
-exclude = ["venv", "dist", "build"]
+exclude = [".venv", "venv", "dist", "build"]
 
 [tool.pdm]
 distribution = false
