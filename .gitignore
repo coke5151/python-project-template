@@ -204,3 +204,6 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks
+
+# ignore local environment path information of PDM
+.pdm-python
