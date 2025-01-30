@@ -1,7 +1,7 @@
 # Python Project Template
 A Python project template with Ruff and Mypy settings
 
-**Important**: Remember to `pdm add mypy` and `pdm add ruff` after virtual environment is created to use mypy and ruff.
+**Important**: Remember to `pdm add mypy` and `pdm add ruff` after virtual environment is created to use mypy and ruff. Also do `pdm add jupyterlab` if you want to use Jupyter Notebook (Web UI or in VSCode) / Jupyter Lab.
 
 ## Virtual Environment
 - [PDM](https://pdm.fming.dev/latest/)
