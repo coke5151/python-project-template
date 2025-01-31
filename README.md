@@ -9,11 +9,20 @@ A Python project template with Ruff and Mypy settings
 You can set up with `pdm init`, it will modify `pyproject.toml` automatically.
 
 # VSCode/Cursor Extension
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
-- [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
-- [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy)：Compatibility better than ms-python.mypy in my experience
-- [Ruff](https://marketplace.cursorapi.com/items?itemName=charliermarsh.ruff)
+
+- Must-have
+	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+	- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+	- [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
+	- [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy): Compatibility better than ms-python.mypy in my experience
+	- [Ruff](https://marketplace.cursorapi.com/items?itemName=charliermarsh.ruff)
+	- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- Nice to have:
+	- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+	- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+	- [GitLens)(https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+	- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
 
 ## VSCode Settings
 For better experience, you can add the following settings to your personal `settings.json`: (already added in this project)
