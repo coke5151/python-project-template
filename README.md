@@ -20,7 +20,7 @@ You can set up with `pdm init`, it will modify `pyproject.toml` automatically.
 - Nice to have:
 	- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 	- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-	- [GitLens)(https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+	- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 	- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 
 
