@@ -14,13 +14,13 @@ You can set up with `pdm init`, it will modify `pyproject.toml` automatically.
 	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 	- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 	- [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
-	- [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy): Compatibility better than ms-python.mypy in my experience
+	- [Mypy (by Matan Gover)](https://marketplace.visualstudio.com/items?itemName=matangover.mypy): Compatibility better than [ms-python.mypy](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker) in my experience
 	- [Ruff](https://marketplace.cursorapi.com/items?itemName=charliermarsh.ruff)
 	- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - Nice to have:
 	- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 	- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-	- [GitLens)(https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+	- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 	- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 
 
