@@ -4,7 +4,7 @@ version = "0.1.0"
 
 [tool.pyright]
 exclude = [".venv", "venv"]
-ignore = []                 # ignore package
+ignore = [".venv", "venv"]
 
 [tool.ruff]
 line-length = 120
