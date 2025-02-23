@@ -28,7 +28,8 @@ You can set up with `pdm init`, it will modify `pyproject.toml` automatically.
 For better experience, you can add the following settings to your personal `settings.json`: (already added in this project)
 
 ```json
-"[python]": {
+{
+  "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
@@ -36,14 +37,17 @@ For better experience, you can add the following settings to your personal `sett
       "source.organizeImports": "always"
     }
   },
-"python.analysis.inlayHints.variableTypes": true,
-"python.analysis.inlayHints.pytestParameters": true,
-"python.analysis.inlayHints.functionReturnTypes": true,
-"python.analysis.inlayHints.callArgumentNames": "all",
-"python.analysis.extraPaths": ["./.venv/Lib/site-packages"],
-"python.analysis.autoFormatStrings": true,
-"python.analysis.typeCheckingMode": "basic",
-"python.analysis.autoImportCompletions": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.extraPaths": ["./.venv/Lib/site-packages"],
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "mypy.runUsingActiveInterpreter": true,
+  "mypy.checkNotebooks": true
+}
 ```
 
 ## Default Scripts

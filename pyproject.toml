@@ -1,6 +1,11 @@
 [project]
 name = "python-project-template"
 version = "0.1.0"
+dependencies = [
+    "mypy",
+    "ruff",
+    "jupyterlab",
+]
 
 [tool.pyright]
 exclude = [".venv", "venv"]
