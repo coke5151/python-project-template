@@ -16,6 +16,16 @@ You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer
 
 [How to use uv as resolver and installer of PDM](https://pdm-project.org/en/latest/usage/uv/)
 
+## PDM Usage
+- `pdm add <package>`: Add new package to default dependency group.
+- `pdm add -d <package>`: Add new package to dev dependency group.
+- `pdm remove <package>`: Remove package (and unused dependencies) in default dependency group.
+- `pdm remove -d <package>`: Remove package (and unused dependencies) in dev dependency group.
+- `pdm run <script>`: Run a command. For example, `pdm run src/main.py` to run the specified script with the virtual environment.
+- `pdm run <command>`: Run a command. For example, `pdm run ruff check` to run ruff check with the virtual environment. It's the same as `ruff check` in terminal with activated virtual environment.
+- `pdm run main`: Run the main script in `src/main.py`
+
+
 # Recommanded VSCode/Cursor Extension
 - Must-have
 	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -56,8 +66,3 @@ For better experience, you can add the following settings to your personal `sett
   "mypy.checkNotebooks": true
 }
 ```
-
-## Default Scripts
-- `pdm run <script>`: Run a command. For example, `pdm run src/main.py` to run the specified script with the virtual environment.
-- `pdm run <command>`: Run a command. For example, `pdm run ruff check` to run ruff check with the virtual environment. It's the same as `ruff check` in terminal with activated virtual environment.
-- `pdm run main`: Run the main script in `src/main.py`
