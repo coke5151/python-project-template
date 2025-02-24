@@ -1,15 +1,22 @@
 # Python Project Template
 A Python project template with Ruff and Mypy settings
 
-**Important**: Remember to `pdm add mypy` and `pdm add ruff` after virtual environment is created to use mypy and ruff. Also do `pdm add jupyterlab` if you want to use Jupyter Notebook (Web UI or in VSCode) / Jupyter Lab.
+**Important**: Remember to `pdm install` after virtual environment created to install the template default dependencies like ruff, mypy, jupyterlab, etc.
 
 ## Virtual Environment
-- [PDM](https://pdm.fming.dev/latest/)
+This template uses [PDM](https://pdm.fming.dev/latest/) as project manager.
 
-You can set up with `pdm init`, it will modify `pyproject.toml` automatically.
+You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer. uv (built in rust) is much faster than PDM's default resolver.
 
-# VSCode/Cursor Extension
+## Setup Steps
+1. Install PDM and [uv](https://github.com/astral-sh/uv) (Optional) in your system.
+2. (Optional) Enable uv as resolver and installer:
+   `pdm config use_uv true`
+3. Run `pdm init`, it will modify `pyproject.toml` automatically.
 
+[How to use uv as resolver and installer of PDM](https://pdm-project.org/en/latest/usage/uv/)
+
+# Recommanded VSCode/Cursor Extension
 - Must-have
 	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 	- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
@@ -51,4 +58,6 @@ For better experience, you can add the following settings to your personal `sett
 ```
 
 ## Default Scripts
+- `pdm run <script>`: Run a command. For example, `pdm run src/main.py` to run the specified script with the virtual environment.
+- `pdm run <command>`: Run a command. For example, `pdm run ruff check` to run ruff check with the virtual environment. It's the same as `ruff check` in terminal with activated virtual environment.
 - `pdm run main`: Run the main script in `src/main.py`
