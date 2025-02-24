@@ -1,9 +1,12 @@
 [project]
 name = "python-project-template"
 version = "0.1.0"
-dependencies = [
-    "mypy",
+dependencies = []
+
+[dependency-groups]
+dev = [
     "ruff",
+    "mypy",
     "jupyterlab",
 ]
 
