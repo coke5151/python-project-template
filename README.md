@@ -1,7 +1,7 @@
 # Python Project Template
 A Python project template with Ruff and Mypy settings
 
-**Important**: Remember to `pdm install` after virtual environment created to install the template default dependencies like ruff, mypy, jupyterlab, etc.
+**Important**: Remember to `pdm update` after virtual environment created to install the template default dependencies like ruff, mypy, jupyterlab, etc.
 
 ## Virtual Environment
 This template uses [PDM](https://pdm.fming.dev/latest/) as project manager.
@@ -13,6 +13,7 @@ You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer
 2. (Optional) Enable uv as resolver and installer:
    `pdm config use_uv true`
 3. Run `pdm init`, it will modify `pyproject.toml` automatically.
+4. Run `pdm update` to install and update the template default dependencies.
 
 [How to use uv as resolver and installer of PDM](https://pdm-project.org/en/latest/usage/uv/)
 
