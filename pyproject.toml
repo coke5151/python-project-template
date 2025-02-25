@@ -55,5 +55,7 @@ exclude = [".venv", "venv", "dist", "build"]
 
 [tool.pdm]
 distribution = false
+
 [tool.pdm.scripts]
 main = "python src/main.py"
+jupyter = "jupyter lab"

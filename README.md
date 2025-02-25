@@ -24,7 +24,12 @@ You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer
 - `pdm remove -d <package>`: Remove package (and unused dependencies) in dev dependency group.
 - `pdm run <script>`: Run a command. For example, `pdm run src/main.py` to run the specified script with the virtual environment.
 - `pdm run <command>`: Run a command. For example, `pdm run ruff check` to run ruff check with the virtual environment. It's the same as `ruff check` in terminal with activated virtual environment.
+
+## PDM Scripts
+You can also add/edit custom scripts in `pyproject.toml` file.
+
 - `pdm run main`: Run the main script in `src/main.py`
+- `pdm run jupyter`: Run jupyter lab.
 
 
 # Recommanded VSCode/Cursor Extension
