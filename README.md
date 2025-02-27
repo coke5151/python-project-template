@@ -28,8 +28,8 @@ You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer
 ## PDM Scripts
 You can also add/edit custom scripts in `pyproject.toml` file.
 
-- `pdm run main`: Run the main script in `src/main.py`
-- `pdm run jupyter`: Run jupyter lab.
+- `pdm run main`: Run the main script in `src/main.py` (==`pdm run python src/man.py`)
+- `pdm run lab`: Run jupyter lab. (==`pdm run jupyter lab`)
 
 
 # Recommanded VSCode/Cursor Extension

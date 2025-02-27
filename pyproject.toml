@@ -58,4 +58,4 @@ distribution = false
 
 [tool.pdm.scripts]
 main = "python src/main.py"
-jupyter = "jupyter lab"
+lab = "jupyter lab"
