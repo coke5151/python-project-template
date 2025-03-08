@@ -1,38 +1,65 @@
 # Python Project Template
-A Python project template with Ruff and Mypy settings
+A modern Python project template leveraging `uv` for dependency management and integrating various development tools for code quality assurance.
 
-**Important**: Remember to `pdm update` after virtual environment created to install the template default dependencies like ruff, mypy, jupyterlab, etc.
+## Features
+- Fast and reliable package management with `uv`
+- Integrated code quality tools settings:
+  - Ruff for linting and formatting
+  - Mypy for static type checking
+  - VSCode integration
+  - Jupyter notebook
 
-## Virtual Environment
-This template uses [PDM](https://pdm.fming.dev/latest/) as project manager.
+## Project Structure
+```
+.
+├── notebooks/         # Jupyter notebook files
+├── .vscode/          # VSCode configuration
+├── README.md         # Project documentation
+├── LICENSE           # License
+├── .gitignore       # Git ignore patterns
+├── mypy.ini         # Mypy configuration
+├── ruff.toml        # Ruff configuration
+└── pyrightconfig.json # Pyright configuration
+```
 
-You can also use [uv](https://github.com/astral-sh/uv) as resolver and installer. uv (built in rust) is much faster than PDM's default resolver.
+## Development Setup
+1. Install `uv`:
+   ```bash
+   # macOS and Linux
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
 
-## Setup Steps
-1. Install PDM and [uv](https://github.com/astral-sh/uv) (Optional) in your system.
-2. (Optional) Enable uv as resolver and installer:
-   `pdm config use_uv true`
-3. Run `pdm init`, it will modify `pyproject.toml` automatically.
-4. Run `pdm update` to install and update the template default dependencies.
+   ```bash
+   # Windows
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+2. Initialize Project:
+   ```bash
+   # For applications
+   uv init --python <version>
+   # Example: uv init --python 3.13
 
-[How to use uv as resolver and installer of PDM](https://pdm-project.org/en/latest/usage/uv/)
+   # For libraries (eg. PyPI distribution)
+   uv init --lib
+   ```
+3. Install Packages:
+   ```bash
+   # Install development tools globally (each tool has its own venv)
+   uv tool install mypy ruff
 
-## PDM Usage
-- `pdm add <package>`: Add new package to default dependency group.
-- `pdm add -d <package>`: Add new package to dev dependency group.
-- `pdm remove <package>`: Remove package (and unused dependencies) in default dependency group.
-- `pdm remove -d <package>`: Remove package (and unused dependencies) in dev dependency group.
-- `pdm run <script>`: Run a command. For example, `pdm run src/main.py` to run the specified script with the virtual environment.
-- `pdm run <command>`: Run a command. For example, `pdm run ruff check` to run ruff check with the virtual environment. It's the same as `ruff check` in terminal with activated virtual environment.
+   # Install development dependencies (jupyterlab for example)
+   uv add jupyterlab --dev  # --dev for development dependencies
 
-## PDM Scripts
-You can also add/edit custom scripts in `pyproject.toml` file.
+   # Install project dependencies (pandas and requests for example)
+   uv add pandas requests  # example packages
+   ```
+4. Run Code:
+   ```bash
+   uv run main.py  # Run main.py in virtual environment
+   uv run jupyter lab  # Launch Jupyter Lab
+   ```
 
-- `pdm run main`: Run the main script in `src/main.py` (==`pdm run python src/man.py`)
-- `pdm run lab`: Run jupyter lab. (==`pdm run jupyter lab`)
-
-
-# Recommanded VSCode/Cursor Extension
+## Recommanded VSCode/Cursor Extension
 - Must-have
 	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 	- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
@@ -46,29 +73,5 @@ You can also add/edit custom scripts in `pyproject.toml` file.
 	- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 	- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 
-
-## VSCode Settings
-For better experience, you can add the following settings to your personal `settings.json`: (already added in this project)
-
-```json
-{
-  "[python]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always",
-      "source.organizeImports": "always"
-    }
-  },
-  "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.inlayHints.pytestParameters": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.callArgumentNames": "all",
-  "python.analysis.extraPaths": ["./.venv/Lib/site-packages"],
-  "python.analysis.autoFormatStrings": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": true,
-  "mypy.runUsingActiveInterpreter": true,
-  "mypy.checkNotebooks": true
-}
-```
+## License
+See [LICENSE](./LICENSE) for details.

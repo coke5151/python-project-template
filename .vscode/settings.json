@@ -14,7 +14,5 @@
   "python.analysis.extraPaths": ["./.venv/Lib/site-packages"],
   "python.analysis.autoFormatStrings": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": true,
-  "mypy.runUsingActiveInterpreter": true,
-  "mypy.checkNotebooks": true
+  "python.analysis.autoImportCompletions": true
 }
