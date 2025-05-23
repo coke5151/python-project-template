@@ -8,10 +8,12 @@ select = [
     "I",   # isort
     "B",   # flake8-bugbear
     "C4",  # flake8-comprehensions
-    "N",   # pep8-naming
-    "UP",  # pyupgrade
+    "SIM", # flake8-simplify
     "A",   # flake8-builtins
     "ARG", # flake8-unused-arguments
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "RUF", # ruff-specific rules
 ]
 
 [lint.per-file-ignores]

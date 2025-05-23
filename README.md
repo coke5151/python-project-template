@@ -64,7 +64,7 @@ A modern Python project template leveraging `uv` for dependency management and i
 	- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 	- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 	- [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
-	- [Mypy (by Matan Gover)](https://marketplace.visualstudio.com/items?itemName=matangover.mypy): Compatibility better than [ms-python.mypy](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker) in my experience
+	- [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker)
 	- [Ruff](https://marketplace.cursorapi.com/items?itemName=charliermarsh.ruff)
 	- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - Nice to have:
