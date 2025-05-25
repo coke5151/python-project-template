@@ -16,6 +16,8 @@ select = [
     "RUF", # ruff-specific rules
 ]
 
+ignore = ["RUF001", "RUF002", "RUF003"]
+
 [lint.per-file-ignores]
 "*.ipynb" = ["F401", "F841", "I001"] # Jupyter Notebook
 
